@@ -6,7 +6,7 @@ draft:
   - true
 ---
 
-# 企业微信消息加解密库（优化后）
+# 企业微信消息加解密库（优化后）[待完善...]
 
 > [官方说明](https://developer.work.weixin.qq.com/document/path/90307#python%E5%BA%93)
 
