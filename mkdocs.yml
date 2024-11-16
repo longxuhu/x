@@ -50,6 +50,8 @@ plugins:
       authors_file: "{blog}/.authors.yaml"
       draft: true
 markdown_extensions:
+  - admonition
+  - pymdownx.details
   - attr_list
   - md_in_html
   - pymdownx.emoji:
@@ -60,7 +62,6 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.tilde
-  - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
   - footnotes
