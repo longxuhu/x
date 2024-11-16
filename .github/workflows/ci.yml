@@ -1,26 +1,40 @@
-name: ci
+name: CI
+
 on:
   push:
     branches:
       - main
+
 permissions:
   contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: 3.x
-      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
-      - uses: actions/cache@v4
+
+      - name: Cache mkdocs-material and pip dependencies
+        uses: actions/cache@v4
         with:
-          key: mkdocs-material-${{ env.cache_id }}
-          path: .cache
+          path: |
+            .cache
+            ~/.cache/pip
+          key: mkdocs-material-${{ github.run_id }}
           restore-keys: |
             mkdocs-material-
-      - env:
+
+      - name: Install dependencies
+        run: pip install mkdocs-material
+
+      - name: Build and Deploy
+        env:
           GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
-      - run: pip install mkdocs-material
-      - run: mkdocs gh-deploy --force
+        run: mkdocs gh-deploy --force
