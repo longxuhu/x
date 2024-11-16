@@ -10,7 +10,7 @@ draft:
 
 > [官方说明](https://developer.work.weixin.qq.com/document/path/90307#python%E5%BA%93)
 
-``` py title="WXBizMsgCrypt3.py" linenums="1"
+``` py title="WXBizMsgCrypt3.py"
 import base64
 import hashlib
 import random
