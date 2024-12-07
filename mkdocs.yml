@@ -122,5 +122,7 @@ nav:
           - 像火箭科学家一样思考: books/2020/think-like-a-rocket-scientist.md
   - 代码片段:
       - 企业微信加解密库: snippets/wecom-biz-msg-crypt3.md
+  - Tips:
+      - Gitlab换成国内公共头像服务: tips/gitlab-public-avatar.md
   - 日记:
       - blog/index.md
