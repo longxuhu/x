@@ -79,6 +79,8 @@ extra:
 nav:
   - 主页: index.md
   - 读书划线:
+      - 2025:
+          - 种草: books/2025/inspire-lives.md
       - 2024:
           - 运动改变大脑: books/2024/move.md
           - 如何成为不完美主义者: books/2024/how-to-be-an-imperfectionist.md
@@ -94,7 +96,6 @@ nav:
           - 见识: books/2024/jianshi.md
           - 大败局: books/2024/dabaiju.md
           - 掌控习惯: books/2024/atomic-habits.md
-          - 种草: books/2024/inspire-lives.md
       - 2023:
           - 底层逻辑2: books/2023/the-underlying-logic-2.md
           - AI未来进行式: books/2023/ai-2041.md
