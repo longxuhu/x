@@ -79,6 +79,8 @@ extra:
 nav:
   - 主页: index.md
   - 读书划线:
+      - 2025:
+          - 种草: books/2025/inspire-lives.md
       - 2024:
           - 运动改变大脑: books/2024/move.md
           - 如何成为不完美主义者: books/2024/how-to-be-an-imperfectionist.md
