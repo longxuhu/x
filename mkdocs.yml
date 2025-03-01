@@ -19,6 +19,7 @@ theme:
     - navigation.path
     - navigation.prune
     - navigation.indexes
+    - navigation.instant
     - search.suggest
     - search.highlight
     - search.share
