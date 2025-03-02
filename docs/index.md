@@ -7,7 +7,7 @@ hide:
 
 # 生活的艰辛，是从始至终的。
 
-![](./assets/img/DALL-E_2025-02-15_18_30_22.png){ width="400" }
+![](./assets/img/DALL-E_2025-02-15_18_30_22.webp){ width="400" }
 
 "Life's travail persists, from its very inception to its final breath."[^1]
 
